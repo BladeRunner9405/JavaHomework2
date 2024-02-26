@@ -21,7 +21,7 @@ public class Restaurant {
         orderQueue.addOrder(order2);
         orderQueue.addOrder(order3);
 
-        ExecutorService chefExecutor = Executors.newFixedThreadPool(3);
+        ExecutorService chefExecutor = Executors.newFixedThreadPool(2);
         chefExecutor.submit(new Chef("Chef 1", orderQueue));
         chefExecutor.submit(new Chef("Chef 2", orderQueue));
         chefExecutor.shutdown();

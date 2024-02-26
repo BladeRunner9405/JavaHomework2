@@ -22,7 +22,7 @@ public class Chef implements Runnable {
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-                System.out.println(name + " has finished preparing order " + order.getOrderId());
+                System.out.println(name + " prepared order " + order.getOrderId());
             }
         }
     }
